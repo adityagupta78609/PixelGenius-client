@@ -32,7 +32,7 @@ const CreatePost = () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            "Access-Control-Allow-Origin": "https://pixelgenius-server.onrender.com",
+            "Access-Control-Allow-Origin": "*",
           },
           body: JSON.stringify({
             prompt: form.prompt,
@@ -61,7 +61,7 @@ const CreatePost = () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            "Access-Control-Allow-Origin": "https://pixelgenius-server.onrender.com",
+            "Access-Control-Allow-Origin": "*",
           },
           body: JSON.stringify({ ...form }),
         });
